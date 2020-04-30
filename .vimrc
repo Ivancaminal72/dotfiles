@@ -351,7 +351,7 @@ set clipboard^=unnamedplus         " unamedplus is more keyboard-centric (<C-c>)
                                    " the important part is that we should match tmux:
                                    " unnamed     -> xclip -selection primary (VS EasyClip)
                                    " unnamedplus -> xclip -selection clipboard
-set termwinkey=º                   " should be the <Leader> (for term and termdebug)
+"set termwinkey=º                   " should be the <Leader> (for term and termdebug)
 set timeoutlen=1000 ttimeoutlen=0  " to reduce the return of normal mode faster
 set cedit=<C-k>                    " edit mode in cmode, see other <C-k> maps
 set nrformats=bin,octal,hex,alpha  " for column incrementing
@@ -361,7 +361,7 @@ set cscopetag                      " use both cscope and ctag as tags
 set csto=0                         " use cscope before ctags
 set cscopequickfix=s-,g-,c-,d-,i-,t-,e-
                                    " All cscope results are placed in quickfix
-set sessionoptions=blank,buffers,curdir,folds,help,options,tabpages,winsize,terminal
+set sessionoptions="blank,buffers,curdir,folds,help,options,tabpages,winsize,terminal"
                                    " save everything on a session
 set grepprg=grep\ -n\ --exclude-dir=.svn\ --exclude=.vimprj.cscope\ $*\ /dev/null
                                    " to exclude svn/git results from search results
